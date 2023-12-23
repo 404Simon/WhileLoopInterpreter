@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="WHILEParser:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/WHILEParser_jar</output-path>
+    <root id="archive" name="WHILEParser.jar">
+      <element id="module-output" name="WHILEParser" />
+      <element id="library" level="project" name="antlr" />
+    </root>
+  </artifact>
+</component>

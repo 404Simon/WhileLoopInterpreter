@@ -1,17 +1,19 @@
 grammar Loop;
 start: prog EOF;
-INT: [0-9]+ ;
 VAR: ('x'|'y'|'z') INT;
 expr: var=VAR '+' num=INT #Plus
     | var=VAR '-' num=INT #Minus
     ;
 asrt: var=VAR '=' ex=expr ';' #Ex
-    | var=VAR '=' var=VAR ';' #Va
+    | varTo=VAR '=' varFrom=VAR ';' #Va
     | var=VAR '=' num=INT ';' #Num
     ;
 prog: asrt #Asert
-    | 'LOOP' var=VAR 'DO' p=prog #Loop
-    | p1=prog p2=prog #ProgProg
+    | 'LOOP' var=VAR 'DO' p=prog 'END' #Loop
+    | prog prog #ProgProg
     ;
+
+INT: [0-9]+ ;
 NEWLINE : [\r\n]+ -> skip;
 LEER: ' ' -> skip;
+LINE_COMMENT: '//' ~[\r\n]* -> skip;
