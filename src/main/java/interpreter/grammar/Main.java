@@ -27,7 +27,7 @@ public class Main {
             }
         }
 
-        ANTLRInputStream input = null;
+        ANTLRInputStream input;
         try {
             input = new ANTLRFileStream(args[0]);
         } catch (IOException e) {
