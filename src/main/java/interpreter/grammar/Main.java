@@ -39,6 +39,6 @@ public class Main {
         LoopParser parser = new LoopParser(tokens);
 
         ParseTree tree = parser.start();
-        new MyVisitor().visit(tree);
+        new Visitor().visit(tree);
     }
 }

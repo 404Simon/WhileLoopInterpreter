@@ -1,4 +1,4 @@
-// Generated from grammar/Loop.g4 by ANTLR 4.13.1
+// Generated from Loop.g4 by ANTLR 4.13.1
 package parser.grammar;
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
@@ -58,6 +58,13 @@ public interface LoopVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitLoop(LoopParser.LoopContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code While}
+	 * labeled alternative in {@link LoopParser#prog}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitWhile(LoopParser.WhileContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code ProgProg}
 	 * labeled alternative in {@link LoopParser#prog}.

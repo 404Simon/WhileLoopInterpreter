@@ -5,11 +5,13 @@ T__3=4
 T__4=5
 T__5=6
 T__6=7
-VAR=8
-INT=9
-NEWLINE=10
-LEER=11
-LINE_COMMENT=12
+T__7=8
+T__8=9
+VAR=10
+INT=11
+NEWLINE=12
+LEER=13
+LINE_COMMENT=14
 '+'=1
 '-'=2
 '='=3
@@ -17,4 +19,6 @@ LINE_COMMENT=12
 'LOOP'=5
 'DO'=6
 'END'=7
-' '=11
+'WHILE'=8
+'!='=9
+' '=13
