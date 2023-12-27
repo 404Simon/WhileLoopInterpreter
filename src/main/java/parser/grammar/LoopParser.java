@@ -31,7 +31,7 @@ public class LoopParser extends Parser {
 	private static String[] makeLiteralNames() {
 		return new String[] {
 			null, "'+'", "'-'", "'='", "';'", "'LOOP'", "'DO'", "'END'", "'WHILE'", 
-			"'!='", null, null, null, "' '"
+			"'!='"
 		};
 	}
 	private static final String[] _LITERAL_NAMES = makeLiteralNames();

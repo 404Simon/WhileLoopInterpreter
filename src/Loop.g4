@@ -16,5 +16,5 @@ prog: asrt #Asert
 
 INT: [0-9]+ ;
 NEWLINE : [\r\n]+ -> skip;
-LEER: ' ' -> skip;
+LEER: [ \t]+ -> skip;
 LINE_COMMENT: '//' ~[\r\n]* -> skip;
